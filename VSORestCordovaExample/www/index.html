@@ -13,8 +13,24 @@
     <!-- VSORestCordovaExample references -->
     <link href="css/index.css" rel="stylesheet" />
 </head>
-<body onload="loadProjects()">
-    <p>Hello, your application is ready!</p>
+<body>
+    <p>
+    <label for="accountName">Account name (e.g. myaccount.visualstudio.com):</label>
+    <input id="accountName" type="text"/>
+    </p>
+    <p>
+    <label for="userName">User name to login to VSO (e.g. me@hotmail.com)</label>
+    <input id="userName" type="text"/>
+    </p>
+    <p>
+    <label for="accessToken">Personal access token:</label>
+    <input id="accessToken" type="password" />
+    </p>
+    <p>
+    <input type="button" value="Display project list" onclick="loadProjects($('#userName').val(), $('#accessToken').val(), $('#projectList'), $('#accountName').val())"/>   
+    </p>
+
+    <div id="projectList">VSO Projects list will be displayed here...</div>
 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
