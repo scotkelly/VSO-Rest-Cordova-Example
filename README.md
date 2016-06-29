@@ -1,5 +1,5 @@
 ﻿# VSO REST Cordova Example 
-This project is a simple example of how to load a list of projects on a Visual Studio Online (VSO) account, using the [VSO REST API](https://www.visualstudio.com/en-us/integrate/api/overview). 
+This project is a simple example of how to load a list of projects on a Visual Studio Team Services (VSTS) account, using the [VSTS REST API](https://www.visualstudio.com/en-us/integrate/api/overview). 
 
 The most interesting code is in the scripts/vsoloader.js file.
 
